@@ -1,0 +1,503 @@
+body {
+  background-color: mintcream;
+}
+
+/*navbar styling*/
+#navbar {
+  background-color: #ec95c2;
+  width: 100%;
+  /*top: 0;*/
+  height: 80px;
+  top: -80px;
+  transition: 0.3s;
+}
+
+.navbar-header, .title .navbar-brand {
+  background-color: #e468a9;
+  border-radius: 10px;
+}
+
+#navcont {
+  transform: translateY(30%);
+}
+
+.title a {
+  /*font-family: 'Poppins', sans-serif;*/
+  font-family: 'Amita', cursive;
+  text-transform: uppercase;
+  color: mintcream;
+  font-size: 1.80em;
+  font-weight: 700;
+  padding-left: 18px;
+  letter-spacing: 0.15em;
+}
+
+.title a:hover,
+.title a:focus {
+  text-decoration: none;
+  }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  /*background-color: #fdb1d5;*/
+  background-color: #ec95c2;
+  width: 90%;
+  margin: auto;
+  border-color: #ec95c2;
+}
+
+.navbar ul li a {
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  border-radius: 5px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: mintcream;
+}
+
+#nav-list li a {
+  transition: color 400ms, background-color 400ms;
+}
+
+#nav-list li a:hover {
+  color: #e468a9;
+  background-color: mintcream;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 15px 10px;
+  margin: 0 2px;
+}
+
+.navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:focus, .navbar .navbar-nav>.active>a:hover{
+  background-color: #42465e;
+}
+
+.navbar-toggle {
+  background-color: #42465e;
+}
+
+.navbar-inverse {
+  border-color: #e468a9;
+}
+
+.navbar-inverse .navbar-collapse .collapse {
+  background-color: #42465e;
+}
+
+
+/*Home styling*/
+.hero-container {
+  background-image: url("../img/rakicevic-nenad-519563-unsplash_crop3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #fdb1d5;
+  /*filter: brightness(0.9) contrast(1.4) hue-rotate(330deg);  */
+  filter: brightness(0.9) contrast(1.4);
+  opacity: 0.82;
+  height: 1200px;
+  width: 100%;
+}
+
+/*@media (max-width:)*/
+
+#hero-caption {
+  margin-top: 18em;
+  max-width: 53vw;
+  border: 8px solid #e468a9;
+  border-radius: 50px;
+  padding: 15px;
+  background-color: #fdb1d5;
+  opacity: 0.85;
+  color: mintcream;
+  transition: color 500ms, background-color 400ms, opacity 400ms;
+}
+
+#hero-caption:hover {
+  background-color: mintcream;
+  color: #e468a9;
+  opacity: 0.75
+}
+
+#main-image a:hover,
+#main-image a:focus {
+  text-decoration: none;
+}
+
+#hero-caption h1 {
+  margin: 15px 0 10px 0;
+  font-family: 'Amita', cursive;
+  font-size: 4.00em;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 800;
+}
+
+.section-divider {
+  /*margin-top: 20px;*/
+  padding-top: 90px;
+  /*position: relative;
+  top: 20px;*/
+}
+
+.divider {
+  width: 70%;
+  margin: auto;
+  height: 5px;
+  background-color: #fdb1d5;
+  border: 0.5px solid #ec95c2;
+}
+
+.container {
+  text-align: center;
+}
+
+#section-head {
+  padding-top: 1em;
+  padding-bottom: 1.25em;
+}
+
+.row {
+  padding-bottom: 2.5em;
+}
+
+
+/*hair & beauty styling*/
+#section2 h3,
+#section3 h3 {
+  background-color: #fdb1d5;
+  padding: 0.25em 0;
+  color: mintcream;
+  transition: background-color 400ms;
+  border-radius: 5px;
+}
+
+#section2 h3:hover,
+#section3 h3:hover {
+  color: mintcream;
+  background-color: #42465e;
+  cursor: default;
+}
+
+
+#hair-overlay, #makeup-overlay, #face-overlay,
+#hydration-overlay, #keratin-overlay, #aroma-overlay {
+  position: relative;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.88;
+  border-radius: 5px;
+}
+
+.overlay-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fed8ea;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlay-top {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fed8ea;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 5px;
+}
+
+.overlay-right {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #fed8ea;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+
+#hair-overlay:hover .overlay-top {
+  bottom: 0;
+  height: 100%;
+  opacity: 0.85;
+}
+
+#makeup-overlay:hover .overlay-top {
+  bottom: 0;
+  height: 100%;
+  opacity: 0.85;
+}
+
+#face-overlay:hover .overlay-top {
+  bottom: 0;
+  height: 100%;
+  opacity: 0.85;
+}
+
+#hydration-overlay:hover .overlay-top {
+  bottom: 0;
+  height: 100%;
+  opacity: 0.85;
+}
+
+#keratin-overlay:hover .overlay-top {
+  bottom: 0;
+  height: 100%;
+  opacity: 0.85;
+}
+
+#aroma-overlay:hover .overlay-top {
+  bottom: 0;
+  height: 100%;
+  opacity: 0.85;
+}
+
+.text {
+  white-space: pre-wrap;
+  color: #42465e;
+  /*font-size: 17px;*/
+  font-weight: 600;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+li {
+  list-style-type: none;
+}
+
+#description {
+  padding-top: 2em;
+}
+
+
+/*contact styling*/
+#section4 .img-responsive {
+  display: inline-block;
+}
+
+#contact-form {
+  border: 2.3px solid #e468a9;
+  border-radius: 20px;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+#form-horizontal {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.help-block {
+  color: #42465ea6;
+}
+
+.query-dropdown,
+.contact-preference {
+  padding-top: 1.5em;
+}
+
+.query-dropdown .form-group {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin: 0 auto 15px auto;
+}
+
+.query-dropdown .form-group p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.query-dropdown select {
+  font-family: 'Ubuntu', sans-serif;
+  color: #42465e;
+  border-radius: 5px;
+  border-color: #ec95c2;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.contact-preference .glyphicon {
+  font-size: 1.8em;
+  color: #424975;
+}
+
+.btn {
+  margin-top: 2.4em;
+  border-radius: 8px;
+  padding: 11px 19px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.15em;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  color: #e468a9;
+  background-color: white;
+  border: 2px solid #e468a9;
+  transition: color 300ms, background-color 300ms, border 300ms;
+}
+
+.btn:hover {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.15em;
+  font-weight: 600;
+  color: white;
+  background-color: #e468a9;
+  border: 2px solid #e468a9;
+}
+
+.contact-logo {
+  height: 3em;
+  width: auto;
+  padding: 4px;
+  border-radius: 20px;
+}
+
+.contact-logo:hover {
+  border: 0.05em pink solid;
+  background-color: #fdb1d5;
+}
+
+
+/*footer styling*/
+#footer {
+  height: 6em;
+  background-color: #fdb1d5;
+  text-align: center;
+}
+
+#footer p {
+  position: relative;
+  top: 40%;
+}
+
+#footer a {
+  font-size: 1.15em;
+  font-family: 'Ubuntu', sans-serif;
+  color: #42465e;
+}
+
+#footer a:hover {
+  text-decoration: none;
+}
+
+
+/*typography*/
+.overlay p {
+  font-size: 1.25em;
+}
+
+h2 {
+  font-size: 2.45em;
+  font-family: 'Acme', sans-serif;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #42465e;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  color: #42465e;
+}
+
+h4 {
+  font-size: 1.15em;
+  font-family: 'Poppins', sans-serif;
+  color: #f573b6;
+}
+
+p {
+  font-size: 1.15em;
+  font-family: 'Ubuntu', sans-serif;
+  color: #42465e;
+}
+
+
+/*media queries*/
+@media (max-width: 850px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .navbar-header, .title .navbar-brand {
+    background-color: #ec95c2;
+  }
+}
