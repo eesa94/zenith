@@ -93,36 +93,34 @@ body {
 
 /*Home styling*/
 .hero-container {
-  background-image: url("../img/rakicevic-nenad-519563-unsplash_crop3.jpg");
-  background-position: center;
+  background-image: url("../img/raphael-lovaski-532696-unsplash.jpg");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 2px solid #fdb1d5;
-  /*filter: brightness(0.9) contrast(1.4) hue-rotate(330deg);  */
-  filter: brightness(0.9) contrast(1.4);
-  opacity: 0.82;
-  height: 1200px;
+  filter: brightness(0.9) contrast(1.2) hue-rotate(325deg);
+  opacity: 0.8;
+  height: 800px;
   width: 100%;
 }
 
-/*@media (max-width:)*/
-
 #hero-caption {
-  margin-top: 18em;
+  /*margin-top: 18em;*/
+  position: relative;
+  top: 100px;
   max-width: 53vw;
   border: 8px solid #e468a9;
   border-radius: 50px;
   padding: 15px;
   background-color: #fdb1d5;
-  opacity: 0.85;
   color: mintcream;
   transition: color 500ms, background-color 400ms, opacity 400ms;
+  filter: brightness(1.0) contrast(1.0) hue-rotate(35deg);
 }
 
 #hero-caption:hover {
   background-color: mintcream;
   color: #e468a9;
-  opacity: 0.75
 }
 
 #main-image a:hover,
