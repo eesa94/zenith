@@ -6,7 +6,6 @@ body {
 #navbar {
   background-color: #ec95c2;
   width: 100%;
-  /*top: 0;*/
   height: 80px;
   top: -80px;
   transition: 0.3s;
@@ -22,7 +21,6 @@ body {
 
 .title a {
   font-family: 'Poppins', sans-serif;
-  /*font-family: 'Amita', cursive;*/
   text-transform: uppercase;
   color: mintcream;
   font-size: 1.80em;
@@ -36,12 +34,14 @@ body {
   text-decoration: none;
   }
 
+.navbar-inverse {
+  border: none;
+}
+
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-  /*background-color: #fdb1d5;*/
   background-color: #ec95c2;
   width: 90%;
   margin: auto;
-  border-color: #ec95c2;
 }
 
 .navbar ul li a {
@@ -101,7 +101,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 2px solid #ffe0ea;
   height: 1080px;
   width: 100%;
   padding: 0;
@@ -198,34 +197,41 @@ body {
 }
 
 
-
-.section-divider {
-  /*margin-top: 20px;*/
-  padding-top: 90px;
-  /*position: relative;
-  top: 20px;*/
+/*About styling*/
+.about-section {
+  position: relative;
+  background-image: url("../img/rakicevic-nenad-519563-unsplash_2_fade_2.jpg");
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #ffe0ea;
+  height: 1200px;
+  width: 100%;
+  padding: 0;
 }
 
-.divider {
-  width: 70%;
-  margin: auto;
-  height: 5px;
-  background-color: #fdb1d5;
-  border: 0.5px solid #ec95c2;
-}
-
-.container {
+/*for about us title*/
+/*.about-section h2 {
+  position: relative;
+  width: 200px;
+  margin: 100px 0 50px;
+  left: 390px;
+  padding: 10px 0;
   text-align: center;
+  border-top: 2px solid;
+  border-bottom: 3px solid;
+}*/
+
+/*for sentence title*/
+.about-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin: 100px 0 50px 80px;
+  padding: 10px 0;
+  letter-spacing: 1.5px;
 }
 
-#section-head {
-  padding-top: 1em;
-  padding-bottom: 1.25em;
-}
 
-.row {
-  padding-bottom: 2.5em;
-}
 
 
 /*hair & beauty styling*/
@@ -489,6 +495,36 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
+/*common elements*/
+.section-divider {
+  /*margin-top: 20px;*/
+  padding-top: 90px;
+  /*position: relative;
+  top: 20px;*/
+}
+
+.divider {
+  width: 70%;
+  margin: auto;
+  height: 5px;
+  background-color: #fdb1d5;
+  border: 0.5px solid #ec95c2;
+}
+
+.container {
+  text-align: center;
+}
+
+#section-head {
+  padding-top: 1em;
+  padding-bottom: 1.25em;
+}
+
+.row {
+  padding-bottom: 35px;
+}
+
+
 /*typography*/
 .overlay p {
   font-size: 1.25em;
@@ -496,9 +532,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 h2 {
   font-size: 2.45em;
-  font-family: 'Acme', sans-serif;
-  text-decoration: underline;
-  text-decoration-style: solid;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   color: #42465e;
 }
 
