@@ -1,3 +1,11 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /*overflow-x: hidden;*/
+}
+
+
 body {
   background-color: mintcream;
 }
@@ -15,8 +23,10 @@ body {
   background-color: #ec95c2;
 }
 
-#navcont {
-  transform: translateY(30%);
+.nav-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .title a {
@@ -140,7 +150,7 @@ body {
   font-size: 60px;
   color: #fdb1d5;
   padding-left: 0;
-  text-shadow: 1px 1px 3px #42465e;
+  text-shadow: 1px 1px 1px #42465e;
   text-transform: uppercase;
   letter-spacing: 9.5px;
   margin: 0;
@@ -186,12 +196,13 @@ body {
 
 .hero-caption h2 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .hero-caption h3 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   letter-spacing: 1px;
   padding-left: 15px;
 }
@@ -200,37 +211,75 @@ body {
 /*About styling*/
 .about-section {
   position: relative;
-  background-image: url("../img/rakicevic-nenad-519563-unsplash_2_fade_2.jpg");
-  background-position: 0px -200px;
+  background-image: url("../img/element5-digital-611421-unsplash_fade.jpg");
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 2px solid #ffe0ea;
   height: 1200px;
   width: 100%;
   padding: 0;
 }
 
-/*for about us title*/
-/*.about-section h2 {
-  position: relative;
-  width: 200px;
-  margin: 100px 0 50px;
-  left: 390px;
-  padding: 10px 0;
-  text-align: center;
-  border-top: 2px solid;
-  border-bottom: 3px solid;
-}*/
-
 /*for sentence title*/
 .about-section h2 {
+  position: absolute;
+  left: 60px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  margin: 100px 0 50px 80px;
+  margin: 100px 0 50px;
   padding: 10px 0;
   letter-spacing: 1.5px;
 }
 
+.about-column {
+  line-height: 1.6;
+}
+
+#about-row-1 {
+  position: absolute;
+  top: 190px;
+}
+
+#about-row-2 {
+  position: absolute;
+  top: 710px;
+}
+
+.about-section-2 {
+  position: relative;
+  background-image: url("../img/rakicevic-nenad-519563-unsplash_flip2_fade.jpg");
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
+  width: 100%;
+  padding: 0;
+}
+
+.about-section-2 h2 {
+  position: absolute;
+  left: 960px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 10px 0;
+  margin: 100px 0 35px;
+  letter-spacing: 1.5px;
+}
+
+#about-row-3 {
+  position: absolute;
+  top: 170px;
+}
+
+#about-row-4 {
+  position: absolute;
+  top: 460px;
+}
+
+.italic-header {
+  margin-top: 40px;
+  font-family: 'Amita', cursive;
+}
 
 
 
@@ -497,10 +546,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /*common elements*/
 .section-divider {
-  /*margin-top: 20px;*/
   padding-top: 90px;
-  /*position: relative;
-  top: 20px;*/
 }
 
 .divider {
@@ -522,14 +568,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .row {
   padding-bottom: 35px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 
 /*typography*/
-.overlay p {
-  font-size: 1.25em;
-}
-
 h2 {
   font-size: 2.45em;
   font-family: 'Poppins', sans-serif;
@@ -550,9 +594,28 @@ h4 {
 }
 
 p {
-  font-size: 1.15em;
-  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   color: #42465e;
+  letter-spacing: 0.5px;
+}
+
+.overlay p {
+  font-size: 17.5px;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  cursor: default;
+}
+
+.justify {
+  text-align: justify;
 }
 
 
