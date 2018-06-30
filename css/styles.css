@@ -101,6 +101,23 @@ body {
   background-color: #42465e;
 }
 
+#nav-1 {
+  animation-delay: 0.3s;
+}
+
+#nav-2 {
+  animation-delay: 0.4s;
+}
+
+#nav-3 {
+  animation-delay: 0.5s;
+}
+
+#nav-4 {
+  animation-delay: 0.6s;
+}
+
+
 
 /*Home styling*/
 
@@ -115,21 +132,6 @@ body {
   width: 100%;
   padding: 0;
 }
-
-/*hero with girl*/
-/*.hero-container {
-  position: relative;
-  background-image: url("../img/rakicevic-nenad-519563-unsplash_flip2_fade.jpg");
-  background-position: 0px -300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom: 2px solid #ffe0ea;
-  filter: brightness(0.9) contrast(1.2) hue-rotate(0deg);
-  height: 1080px;
-  width: 100%;
-  padding: 0;
-}*/
-
 
 .hero-nav-container {
   height: 130px;
@@ -257,24 +259,30 @@ body {
 }
 
 .about-section-2 h2 {
-  position: absolute;
-  left: 960px;
+  /*position: absolute;*/
+  /*left: 960px;*/
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   padding: 10px 0;
-  margin: 100px 0 35px;
+  /*margin: 100px 0 35px;*/
   letter-spacing: 1.5px;
 }
 
 #about-row-3 {
-  position: absolute;
-  top: 170px;
+  position: relative;
+  /*top: 170px;*/
 }
 
 #about-row-4 {
-  position: absolute;
-  top: 460px;
+  position: relative;
+  /*top: 170px;*/
 }
+
+#about-row-5 {
+  margin-top: 70px;
+  padding-bottom: 25px;
+}
+
 
 .italic-header {
   margin-top: 40px;

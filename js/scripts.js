@@ -1,13 +1,13 @@
 // Makes nav bar appear after scrolling down
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-    document.getElementById("navbar").style.top = "0";
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 600) {
+    $('#navbar').css('top', '0');
+    $('#nav-list li').addClass('fadeIn');
   } else {
-    document.getElementById("navbar").style.top = "-80px";
+    $('#navbar').css('top', '-80px');
+    $('#nav-list li').removeClass('fadeIn');
   }
-}
+});
 
 
 $(document).ready(function(){

@@ -10,6 +10,9 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 
     <!-- Custom styles for this template go here -->
     <link rel="stylesheet" href="css/styles.css">
@@ -45,10 +48,10 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right" id="nav-list">
             <!-- <li><a href="#main-image">Home</a></li> -->
-            <li><a href="#about">About</a></li>
-            <li><a href="#hair">Hair &amp; Beauty</a></li>
-            <li><a href="#treat">Advanced Treatments</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="animated" id="nav-1"><a href="#about">About</a></li>
+            <li class="animated" id="nav-2"><a href="#hair">Hair &amp; Beauty</a></li>
+            <li class="animated" id="nav-3"><a href="#treat">Advanced Treatments</a></li>
+            <li class="animated" id="nav-4"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -100,18 +103,23 @@
     </div>
 
     <div class="container-fluid about-section-2">
-      <h2>Style &amp; Substance</h2>
+      <div class="row" id="about-row-5">
+        <div class="col-lg-3 col-md-offset-6">
+          <h2>Style &amp; Substance</h2>
+        </div>
+      </div>
       <div class="row" id="about-row-3">
-        <div class="col-md-3 col-md-offset-6">
-          <h3>Our Clients</h3>
-          <p class="justify">One thing our valued clients consistently mention is how blown away they are by Zenith's beautiful, contemporary, sleek, yet homely premises. This is where the magic happens, so we want the experience to be as comfortable as possible for you.</p>
-          <p class="justify">ItWe're not just style, we have the substance to match. Our team of expert stylists, artists, and therapists are on hand to deliver the uncompromising quality you deserve</p>
+        <div class="col-lg-3 col-lg-offset-6 about-column">
+          <h3>Our Customers</h3>
+          <p class="justify">Central to our success is providing a high quality service. We value each and every one of our customers, and we go the extra mile to accommodate your requests.</p>
+          <p class="justify">When you set foot inside Zenith, you will feel at home in our beautiful, contemporary, and sleek premises. This is where the magic happens, so we want the experience to be as comfortable as possible for you.</p>
+          <p class="justify">We're not just style, we have the substance to match. Our team of expert stylists, artists, and therapists are on hand to deliver the uncompromising quality you deserve.</p>
         </div>
       </div>
       <div class="row" id="about-row-4">
-        <div class="col-md-3 col-md-offset-6">
-          <h3>Our Staff</h3>
-          <p class="justify">At Zenith, we understand the importance of expertise, which is why we go to great lengths to ensure that our team delivers an exceptionally high quality of service. Demanding yet rewarding is how it is often described, and this allows you to sit back and let us do the rest.</p>
+        <div class="col-lg-3 col-lg-offset-6 about-column">
+          <h3>Our People</h3>
+          <p class="justify">At Zenith, we understand the importance of expertise, which is why we go to great lengths to ensure that our team delivers exceptional quality. Demanding yet rewarding is how we would describe it. Sit back and let us take care of the rest.</p>
         </div>
       </div>
     </div>
@@ -159,7 +167,7 @@
               </div>
             </div>
           </div>
-          <p id="description">Our hair treatments use only the highest quality products on the market. We make it a priority to stay up to date with trends and developments, ensuring that we can pass this expertise onto our customers in the form of exceptional quality of service.
+          <p class="justify" id="description">Our hair treatments use only the highest quality products on the market. We make it a priority to stay up to date with trends and developments, ensuring that we can pass this expertise onto our customers in the form of exceptional quality of service.
           </p>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4">
@@ -174,7 +182,7 @@
               </div>
             </div>
           </div>
-          <p id="description">We provide professional makeup solutions for any occasion, using the best products and tools at our disposal. Perhaps you have a special event coming up and you want to look your best? No stress, just tell us what you're after and we'll handle the rest.
+          <p class="justify" id="description">We provide professional makeup solutions for any occasion, using the best products and tools at our disposal. Perhaps you have a special event coming up and you want to look your best? No stress, just tell us what you're after and we'll handle the rest.
           </p>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4">
@@ -189,7 +197,7 @@
               </div>
             </div>
           </div>
-          <p id="description">Restore your youthful appearance and fight back the ageing process with our revitalising end-to-end facial treatment, which utilises the most advanced skincare products available. Get in touch for a free initial consultation, and kick-start the new you today!
+          <p class="justify" id="description">Restore your youthful appearance and fight back the ageing process with our revitalising end-to-end facial treatment, which utilises the most advanced skincare products available. Get in touch for a free initial consultation, and kick-start the new you today!
           </p>
         </div>
       </div>
@@ -227,7 +235,7 @@
               </div>
             </div>
           </div>
-          <p id="description">Do you feel consistently sluggish, tired, and lacking energy? We now offer revolutionary IV therapy which can aid a whole host of issues which are prevalent in today's fast-paced society. Restore hydration, relieve pain, and rejuvenate skin, hair, and nails, with an infusion of vitamins and minerals providing an almost instant boost.
+          <p class="justify" id="description">Do you feel consistently sluggish, tired, and lacking energy? We now offer revolutionary IV therapy which can aid a whole host of issues which are prevalent in today's fast-paced society. Restore hydration, relieve pain, and rejuvenate skin, hair, and nails, with an infusion of vitamins and minerals providing an almost instant boost.
           </p>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4">
@@ -242,7 +250,7 @@
               </div>
             </div>
           </div>
-          <p id="description">If your hair is frizzy, damaged, and lacking that something special, then consider our Nanokeratin System treatment. Designed to reverse the effects of damage and general wear and tear, the treatment combats your unruly hair and results in a smoother, shinier, and healthier finish, enhancing colour, and eliminating frizz.
+          <p class="justify" id="description">If your hair is frizzy, damaged, and lacking that something special, then consider our Nanokeratin System treatment. Designed to reverse the effects of damage and general wear and tear, the treatment combats your unruly hair and results in a smoother, shinier, and healthier finish, enhancing colour, and eliminating frizz.
           </p>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4">
@@ -257,7 +265,7 @@
               </div>
             </div>
           </div>
-          <p id="description">Think of it as a mindfulness massage. Combining the traditional elements of a massage with the beautiful, uplifting aromas of our essential oils, aromatherapy is the perfect way to clear your mind and relax your body. Engage multiple senses simultaneously and leave feeling de-stressed and invigorated.
+          <p class="justify" id="description">Think of it as a mindfulness massage. Combining the traditional elements of a massage with the beautiful, uplifting aromas of our essential oils, aromatherapy is the perfect way to clear your mind and relax your body. Engage multiple senses simultaneously and leave feeling de-stressed and invigorated.
           </p>
         </div>
       </div>
