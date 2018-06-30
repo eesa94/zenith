@@ -1,16 +1,28 @@
-// Makes nav bar appear after scrolling down
-$(window).scroll(function() {
-  if ($(this).scrollTop() > 600) {
-    $('#navbar').css('top', '0');
-    $('#nav-list li').addClass('fadeIn');
-  } else {
-    $('#navbar').css('top', '-80px');
-    $('#nav-list li').removeClass('fadeIn');
-  }
-});
-
 
 $(document).ready(function(){
+
+
+  // Makes nav bar appear after scrolling down
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 600) {
+      $('#navbar').css('display', 'block').addClass('slideInDown').removeClass('slideOutUp');
+      $('#nav-list li').addClass('fadeIn').removeClass('fadeOut');
+      $('#nav-1').css('animation-delay', '0.5s');
+      $('#nav-2').css('animation-delay', '0.6s');
+      $('#nav-3').css('animation-delay', '0.7s');
+      $('#nav-4').css('animation-delay', '0.8s');
+
+    } else {
+      $('#navbar').removeClass('slideInDown').addClass('slideOutUp');
+      $('#nav-list li').removeClass('fadeIn').addClass('fadeOut');
+      $('#nav-1').css('animation-delay', '0.5s');
+      $('#nav-2').css('animation-delay', '0.4s');
+      $('#nav-3').css('animation-delay', '0.3s');
+      $('#nav-4').css('animation-delay', '0.2s');
+
+    }
+  });
+
 // scrollspy
   var $root = $('html, body');
   $('.navbar-nav a, #title-home, #main-image a').click(function() {
