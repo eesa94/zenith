@@ -103,22 +103,6 @@ body {
   background-color: #42465e;
 }
 
-/*#nav-1 {
-  animation-delay: 0.5s;
-}
-
-#nav-2 {
-  animation-delay: 0.6s;
-}
-
-#nav-3 {
-  animation-delay: 0.7s;
-}
-
-#nav-4 {
-  animation-delay: 0.8s;
-}*/
-
 .slideInDown,
 .slideOutUp,
 .slideInLeft,
@@ -291,17 +275,33 @@ body {
   /*top: 170px;*/
 }
 
-#about-row-5 {
+.row-header {
   margin-top: 70px;
   padding-bottom: 25px;
 }
-
 
 .italic-header {
   margin-top: 40px;
   font-family: 'Amita', cursive;
 }
 
+.products-services-section {
+  position: relative;
+  background-image: url("../img/velizar-ivanov-514992-unsplash_fade.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
+  width: 100%;
+  padding: 0;
+}
+
+.products-services-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 10px 0;
+  letter-spacing: 1.5px;
+}
 
 
 /*hair & beauty styling*/
@@ -320,7 +320,6 @@ body {
   background-color: #42465e;
   cursor: default;
 }
-
 
 #hair-overlay, #makeup-overlay, #face-overlay,
 #hydration-overlay, #keratin-overlay, #aroma-overlay {
@@ -374,7 +373,6 @@ body {
   height: 100%;
   transition: .5s ease;
 }
-
 
 #hair-overlay:hover .overlay-top {
   bottom: 0;
@@ -435,13 +433,29 @@ li {
 
 
 /*contact styling*/
-#section4 .img-responsive {
-  display: inline-block;
+.contact-section {
+  position: relative;
+  background-image: url("../img/charisse-kenion-502611-unsplash_crop_fade.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
+  width: 100%;
+  padding: 0;
+}
+
+.contact-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 10px 0;
+  letter-spacing: 1.5px;
 }
 
 #contact-form {
+  text-align: center;
   border: 2.3px solid #e468a9;
   border-radius: 20px;
+  background-color: mintcream;
 }
 
 .form-inline {
