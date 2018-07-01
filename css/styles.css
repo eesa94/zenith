@@ -5,10 +5,89 @@ body {
   /*overflow-x: hidden;*/
 }
 
-
 body {
   background-color: mintcream;
 }
+
+
+/*common elements*/
+.section-divider {
+  padding-top: 90px;
+}
+
+.divider {
+  width: 70%;
+  margin: auto;
+  height: 5px;
+  background-color: #fdb1d5;
+  border: 0.5px solid #ec95c2;
+}
+
+.container {
+  text-align: center;
+}
+
+#section-head {
+  padding-top: 1em;
+  padding-bottom: 1.25em;
+}
+
+.row {
+  padding-bottom: 35px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.nm {
+  margin: 0;
+}
+
+
+/*typography*/
+h2 {
+  font-size: 2.45em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #42465e;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  color: #42465e;
+}
+
+h4 {
+  font-size: 1.15em;
+  font-family: 'Poppins', sans-serif;
+  color: #f573b6;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #42465e;
+  letter-spacing: 0.5px;
+}
+
+.overlay p {
+  font-size: 17.5px;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  cursor: default;
+}
+
+.justify {
+  text-align: justify;
+}
+
 
 /*navbar styling*/
 #navbar {
@@ -435,7 +514,7 @@ li {
 /*contact styling*/
 .contact-section {
   position: relative;
-  background-image: url("../img/charisse-kenion-502611-unsplash_crop_fade.jpg");
+  background-image: url("../img/annie-spratt-466760-unsplash_fade.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -456,68 +535,65 @@ li {
   border: 2.3px solid #e468a9;
   border-radius: 20px;
   background-color: mintcream;
+  padding: 20px 15px;
 }
 
-.form-inline {
-  display: flex;
-  justify-content: space-between;
-  width: 75%;
-  margin: 0 auto;
-  padding: 2em 0;
+.form-group {
+  margin-bottom: 0;
 }
 
-#form-horizontal {
+.form-row {
+  margin-bottom: 15px;
+  padding-bottom: 0;
+}
+
+.form-row p {
+  line-height: 2;
+}
+
+.form-horizontal {
   width: 75%;
-  margin: 0 auto;
-  padding-bottom: 1.5em;
+  margin: 20px auto;
+}
+
+.form-control {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 0;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type="text"],
+input[type="number"],
+.form-control {
+     border-top: 0;
+     border-right: 0;
+     border-left: 0;
+     border-bottom: 0;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+     background-color: #fff2f8;
+     color: #42465e;
+     font-family: 'Poppins', sans-serif;
+     font-size: 16px;
+     font-weight: 300;
+     letter-spacing: 1px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+     -webkit-box-shadow: none;
+     box-shadow: none;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-
-.help-block {
-  color: #42465ea6;
-}
-
-.query-dropdown,
-.contact-preference {
-  padding-top: 1.5em;
-}
-
-.query-dropdown .form-group {
-  display: flex;
-  justify-content: space-around;
-  width: 85%;
-  margin: 0 auto 15px auto;
-}
-
-.query-dropdown .form-group p {
-  font-size: 1em;
-  margin: 0;
-}
-
-.query-dropdown select {
-  font-family: 'Ubuntu', sans-serif;
-  color: #42465e;
-  border-radius: 5px;
-  border-color: #ec95c2;
-}
-
-.radio {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  margin: 0 auto;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-
-.contact-preference .glyphicon {
-  font-size: 1.8em;
-  color: #424975;
 }
 
 .btn {
@@ -555,6 +631,25 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #fdb1d5;
 }
 
+.social-icons {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+}
+
+.fab {
+  margin: 0 5px;
+  color: #ec95c2;
+  transition: 0.3s;
+}
+
+.fab:hover {
+  color: #42465e;
+}
+
 
 /*footer styling*/
 #footer {
@@ -576,81 +671,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 #footer a:hover {
   text-decoration: none;
-}
-
-
-/*common elements*/
-.section-divider {
-  padding-top: 90px;
-}
-
-.divider {
-  width: 70%;
-  margin: auto;
-  height: 5px;
-  background-color: #fdb1d5;
-  border: 0.5px solid #ec95c2;
-}
-
-.container {
-  text-align: center;
-}
-
-#section-head {
-  padding-top: 1em;
-  padding-bottom: 1.25em;
-}
-
-.row {
-  padding-bottom: 35px;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-
-/*typography*/
-h2 {
-  font-size: 2.45em;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  color: #42465e;
-}
-
-h3 {
-  font-size: 1.5em;
-  font-family: 'Poppins', sans-serif;
-  color: #42465e;
-}
-
-h4 {
-  font-size: 1.15em;
-  font-family: 'Poppins', sans-serif;
-  color: #f573b6;
-}
-
-p {
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  color: #42465e;
-  letter-spacing: 0.5px;
-}
-
-.overlay p {
-  font-size: 17.5px;
-  font-weight: 500;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  cursor: default;
-}
-
-.justify {
-  text-align: justify;
 }
 
 

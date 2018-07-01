@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
 
     <!-- Custom styles for this template go here -->
@@ -285,149 +286,82 @@
       <div class="row">
         <div class="col-lg-3 col-lg-offset-1 about-column">
           <h3>We Would Love To Hear From You</h3>
-          <p class="justify">If you would like to make a booking, or if you have any queries regarding our services, then the best way to contact us is by using the form below.</p>
+          <p class="justify">If you would like to book an appointment, or if you have any queries regarding our services, then please contact us using the form (please complete all fields).</p>
+          <h3>Follow Zenith</h3>
+          <p class="justify">Keep updated with all things Zenith by following us on social media. You can also message us through our various accounts. We regularly showcase examples of our work and may offer you the chance to feature as part of our promotion.</p>
+          <div class="social-icons">
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+          </div>
         </div>
-        <div class="col-lg-6 col-lg-offset-1" id="contact-form">
+        <div class="col-lg-5 col-lg-offset-2" id="contact-form">
           <h4>Your details</h4>
-          <form class="form-inline hidden-xs">
-            <div class="form-group">
-              <label class="sr-only" for="fname">First Name</label>
-              <input type="text" class="form-control" id="fname" placeholder="*First Name" required="required">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="sname">Second Name</label>
-              <input type="text" class="form-control" id="sname" placeholder="*Second Name" required="required">
-            </div>
-          </form>
-          <form class="visible-xs" id=form-horizontal>
-            <div class="form-group">
-              <label class="sr-only" for="fname">First Name</label>
-              <input type="text" class="form-control" id="fname" placeholder="*First Name" required="required">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="sname">Second Name</label>
-              <input type="text" class="form-control" id="sname" placeholder="*Second Name" required="required">
-            </div>
-          </form>
-          <form id="form-horizontal">
-            <div class="form-group">
-              <label class="sr-only" for="phone">Phone Number</label>
-              <input type="number" class="form-control" id="phone" placeholder="*Contact Number" required="required">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="email">Email Address</label>
-              <input type="text" class="form-control" id="email" placeholder="*Email Address" required="required">
-            </div>
-            <div class="query-dropdown">
-              <h4>Your message</h4>
-              <p class="help-block">Please select an option from the dropdown below</p>
-              <div class="form-group">
-                <label class="sr-only" for="querytype">Query Type</label>
-                <p class="hidden-xs">I would like to...</p>
-                <select id="querytype" required>
-                  <option value=""></option>
-                  <option value="consultation">Book a Consultation</option>
-                  <option value="appointment">Book an Appointment</option>
-                  <option value="more-info">Learn more about Zenith's services</option>
-                  <option value="hello">Say hi :)</option>
-                  <option value="other">Other</option>
-                </select>
+          <form class="form-horizontal">
+            <div class="row form-row">
+              <div class="col-xs-3">
+                <p class="nm">First Name</p>
+              </div>
+              <div class="col-xs-9">
+                <div class="form-group">
+                  <label class="sr-only" for="fname">First Name</label>
+                  <input type="text" class="form-control" id="fname" required="required">
+                </div>
               </div>
             </div>
+            <div class="row form-row">
+              <div class="col-xs-3">
+                <p class="nm">Last Name</p>
+              </div>
+              <div class="col-xs-9">
+                <div class="form-group">
+                  <label class="sr-only" for="sname">Last Name</label>
+                  <input type="text" class="form-control" id="lname" required="required">
+                </div>
+              </div>
+            </div>
+            <div class="row form-row">
+              <div class="col-xs-3">
+                <p class="nm">Phone</p>
+              </div>
+              <div class="col-xs-9">
+                <div class="form-group">
+                  <label class="sr-only" for="phone">Phone Number</label>
+                  <input type="number" class="form-control" id="phone" required="required">
+                </div>
+              </div>
+            </div>
+            <div class="row form-row">
+              <div class="col-xs-3">
+                <p class="nm">Email</p>
+              </div>
+              <div class="col-xs-9">
+                <div class="form-group">
+                  <label class="sr-only" for="email">Email Address</label>
+                  <input type="text" class="form-control" id="email" required="required">
+                </div>
+              </div>
+            </div>
+          </form>
+          <form class="form-horizontal">
+            <h4>Your message</h4>
             <div class="form-group">
               <label class="sr-only" for="message">Message</label>
-              <textarea style="resize:none" rows="8" class="form-control" id="message" placeholder="*Please Write Your Message Here..." required="required"></textarea>
-            </div>
-            <div class="contact-preference">
-              <p class="help-block">Please choose your preferred contact method</p>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked><span class="glyphicon glyphicon-envelope"></span>
-                </label>
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><span class="glyphicon glyphicon-phone"></span>
-                </label>
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">I don't mind
-                </label>
-              </div>
+              <textarea style="resize:none" rows="8" class="form-control" id="message" required="required"></textarea>
             </div>
             <button type="submit" class="btn btn-default">Send</button>
           </form>
         </div>
-
       </div>
-
-      <!-- <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2" id="contact-form">
-          <h4>Your details</h4>
-          <form class="form-inline hidden-xs">
-            <div class="form-group">
-              <label class="sr-only" for="fname">First Name</label>
-              <input type="text" class="form-control" id="fname" placeholder="*First Name" required="required">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="sname">Second Name</label>
-              <input type="text" class="form-control" id="sname" placeholder="*Second Name" required="required">
-            </div>
-          </form>
-          <form class="visible-xs" id=form-horizontal>
-            <div class="form-group">
-              <label class="sr-only" for="fname">First Name</label>
-              <input type="text" class="form-control" id="fname" placeholder="*First Name" required="required">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="sname">Second Name</label>
-              <input type="text" class="form-control" id="sname" placeholder="*Second Name" required="required">
-            </div>
-          </form>
-          <form id="form-horizontal">
-            <div class="form-group">
-              <label class="sr-only" for="phone">Phone Number</label>
-              <input type="number" class="form-control" id="phone" placeholder="*Contact Number" required="required">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="email">Email Address</label>
-              <input type="text" class="form-control" id="email" placeholder="*Email Address" required="required">
-            </div>
-            <div class="query-dropdown">
-              <h4>Your message</h4>
-              <p class="help-block">Please select an option from the dropdown below</p>
-              <div class="form-group">
-                <label class="sr-only" for="querytype">Query Type</label>
-                <p class="hidden-xs">I would like to...</p>
-                <select id="querytype" required>
-                  <option value=""></option>
-                  <option value="consultation">Book a Consultation</option>
-                  <option value="appointment">Book an Appointment</option>
-                  <option value="more-info">Learn more about Zenith's services</option>
-                  <option value="hello">Say hi :)</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="message">Message</label>
-              <textarea style="resize:none" rows="8" class="form-control" id="message" placeholder="*Please Write Your Message Here..." required="required"></textarea>
-            </div>
-            <div class="contact-preference">
-              <p class="help-block">Please choose your preferred contact method</p>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked><span class="glyphicon glyphicon-envelope"></span>
-                </label>
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><span class="glyphicon glyphicon-phone"></span>
-                </label>
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">I don't mind
-                </label>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-default">Send</button>
-          </form>
-        </div>
-      </div> -->
     </div>
 
       <!-- <div class="row">

@@ -11,6 +11,8 @@ $(document).ready(function(){
       $('#nav-2').css('animation-delay', '0.6s');
       $('#nav-3').css('animation-delay', '0.7s');
       $('#nav-4').css('animation-delay', '0.8s');
+      $('#nav-5').css('animation-delay', '0.9s');
+
 
     } else {
       $('#navbar').removeClass('slideInDown').addClass('slideOutUp');
@@ -19,6 +21,7 @@ $(document).ready(function(){
       $('#nav-2').css('animation-delay', '0.4s');
       $('#nav-3').css('animation-delay', '0.3s');
       $('#nav-4').css('animation-delay', '0.2s');
+      $('#nav-5').css('animation-delay', '0.1s');
 
     }
   });
