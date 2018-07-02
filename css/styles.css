@@ -63,7 +63,7 @@ h3 {
 h4 {
   font-size: 1.15em;
   font-family: 'Poppins', sans-serif;
-  color: #f573b6;
+  color: #ec95c2;
 }
 
 p {
@@ -311,6 +311,9 @@ p {
 
 .about-column {
   line-height: 1.6;
+  box-shadow: -3px 0px 0px 0px #fdb1d5;
+  /*box-shadow: -2px 0px 0px 0px #bdbfce;*/
+  margin-bottom: 15px;
 }
 
 .about-section-2 {
@@ -354,7 +357,7 @@ p {
   font-family: 'Amita', cursive;
 }
 
-.products-services-section {
+.hair-cosmetics-section {
   position: relative;
   background-image: url("../img/velizar-ivanov-514992-unsplash_fade.jpg");
   background-position: left;
@@ -365,11 +368,34 @@ p {
   padding: 0;
 }
 
-.products-services-section h2 {
+.hair-cosmetics-section h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   padding: 10px 0;
   letter-spacing: 1.5px;
+}
+
+.advanced-treatments-section {
+  position: relative;
+  background-image: url("../img/ramy-kabalan-678766-unsplash_fade.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
+  width: 100%;
+  padding: 0;
+}
+
+.advanced-treatments-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 10px 0;
+  letter-spacing: 1.5px;
+}
+
+.hair-cosmetics-section-2,
+.advanced-treatments-section-2 {
+  padding-bottom: 90px;
 }
 
 
@@ -504,7 +530,7 @@ li {
 /*contact styling*/
 .contact-section {
   position: relative;
-  background-image: url("../img/annie-spratt-466760-unsplash_fade.jpg");
+  background-image: url("../img/annie-spratt-466760-unsplash_fade_flip.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -522,7 +548,7 @@ li {
 
 #contact-form {
   text-align: center;
-  border: 2.3px solid #e468a9;
+  border: 2.3px solid #ec95c2;
   border-radius: 20px;
   background-color: mintcream;
   padding: 20px 15px;
@@ -594,10 +620,10 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 1.15em;
   font-weight: 600;
   letter-spacing: 0.10em;
-  color: #e468a9;
+  color: #ec95c2;
   background-color: white;
-  border: 2px solid #e468a9;
-  transition: color 300ms, background-color 300ms, border 300ms;
+  border: 2px solid #ec95c2;
+  transition: 300ms;
 }
 
 .btn:hover {
@@ -605,20 +631,8 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 1.15em;
   font-weight: 600;
   color: white;
-  background-color: #e468a9;
-  border: 2px solid #e468a9;
-}
-
-.contact-logo {
-  height: 3em;
-  width: auto;
-  padding: 4px;
-  border-radius: 20px;
-}
-
-.contact-logo:hover {
-  border: 0.05em pink solid;
-  background-color: #fdb1d5;
+  background-color: #ec95c2;
+  border: 2px solid #ec95c2;
 }
 
 .social-icons {
@@ -643,7 +657,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /*footer styling*/
 #footer {
-  height: 6em;
+  height: 150px;
   background-color: #fdb1d5;
   text-align: center;
 }
@@ -651,11 +665,12 @@ input[type="number"]::-webkit-inner-spin-button {
 #footer p {
   position: relative;
   top: 40%;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 #footer a {
-  font-size: 1.15em;
-  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
   color: #42465e;
 }
 
