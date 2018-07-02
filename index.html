@@ -25,7 +25,7 @@
 
   <body data-spy="scroll" data-target=".navbar">
 
-
+    <!-- Primary navbar visible > 992px -->
     <nav class="navbar navbar-inverse navbar-fixed-top animated" role="navigation" id="navbar">
       <div class="container-fluid nav-container">
         <div class="navbar-header">
@@ -40,7 +40,7 @@
             <a href="#main-image" id="title-home">Zenith</a>
           </div>
         </div>
-        <div class="navbar-collapse collapse">
+        <div class="navbar-primary">
           <ul class="nav navbar-nav navbar-right" id="nav-list">
             <li class="animated" id="nav-1"><a href="#about">About</a></li>
             <li class="animated" id="nav-3"><a href="#hair-and-cosmetics">Hair &amp; Cosmetics</a></li>
@@ -50,6 +50,21 @@
         </div>
       </div>
     </nav>
+
+    <!-- Secondary navbar visible < 992px -->
+    <nav class="navbar navbar-fixed-top navbar-secondary" role="navigation">
+      <div class="container-fluid">
+        <div class="title navbar-brand navbar-brand-secondary">
+          <a href="#main-image" id="title-home">Zenith</a>
+        </div>
+        <button type="button" class="navbar-open" data-toggle="collapse"
+        data-target=".navbar-collapse">
+          <i class="fas fa-bars"></i>
+        </button>
+
+      </div>
+    </nav>
+
 
     <div class="container-fluid hero-container" id="main-image">
       <div class="hero-nav-container">
@@ -71,6 +86,7 @@
           </li>
         </ul>
       </div>
+
       <div class="hero-caption">
         <h2>Your Dream Salon Experience</h2>
         <h3>made a reality by our expert stylists, artists, and therapists</h3>
