@@ -216,6 +216,7 @@ a:focus {
   height: 50px;
   background-color: #ec95c2;
   z-index: 1029;
+  transition: 0.3s;
 }
 
 .navbar-brand-secondary {
@@ -231,6 +232,7 @@ a:focus {
   height: 100%;
   background-color: #ec95c2;
   z-index: 1030;
+  transition: 0.3s;
 }
 
 .sidebar-navigation {
@@ -258,14 +260,15 @@ a:focus {
 .fa-times {
   font-size: 30px;
   padding: 0 5px;
+  color: #42465e;
 }
 
 .sidebar-navigation-item {
   width: 80%;
-  margin: 10px auto;
-  padding: 15px 20px;
   background-color: mintcream;
   border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .sidebar-navigation-item a {
