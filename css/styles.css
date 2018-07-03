@@ -48,26 +48,26 @@ html {
 
 /*typography*/
 h2 {
-  font-size: 2.45em;
+  font-size: 3.4rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #42465e;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 2.1rem;
   font-family: 'Poppins', sans-serif;
   color: #42465e;
 }
 
 h4 {
-  font-size: 1.15em;
+  font-size: 1.61rem;
   font-family: 'Poppins', sans-serif;
   color: #ec95c2;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: #42465e;
@@ -75,7 +75,7 @@ p {
 }
 
 .overlay p {
-  font-size: 17.5px;
+  font-size: 1.75rem;
   font-weight: 500;
 }
 
@@ -122,10 +122,10 @@ a:focus {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   color: mintcream;
-  font-size: 1.80em;
+  font-size: 3.24rem;
   font-weight: 600;
   padding-left: 18px;
-  letter-spacing: 0.15em;
+  letter-spacing: 4.8px;
 }
 
 .title a:hover,
@@ -146,7 +146,7 @@ a:focus {
 .navbar ul li a {
   font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 0.75px;
   border-radius: 5px;
@@ -213,12 +213,68 @@ a:focus {
 .navbar-secondary {
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 50px;
   background-color: #ec95c2;
+  z-index: 1029;
 }
 
-.navabr-brand-secondary {
+.navbar-brand-secondary {
   float: left;
+}
+
+/*sidebar styling*/
+.sidebar {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ec95c2;
+  z-index: 1030;
+}
+
+.sidebar-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.sidebar-title a {
+  padding: 10px;
+}
+
+.fa-times {
+  font-size: 30px;
+  padding: 0 5px;
+}
+
+.sidebar-navigation-item {
+  width: 80%;
+  margin: 10px auto;
+  padding: 15px 20px;
+  background-color: mintcream;
+  border-radius: 5px;
+}
+
+.sidebar-navigation-item a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.15px;
+  color: #ec95c2;
+
 }
 
 
@@ -252,7 +308,7 @@ a:focus {
 .hero-brand-xs h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 6.0rem;
   color: #fdb1d5;
   padding-left: 0;
   text-shadow: 1px 1px 1px #42465e;
@@ -433,7 +489,7 @@ a:focus {
 #section2 h3,
 #section3 h3 {
   background-color: #fdb1d5;
-  padding: 0.25em 0;
+  padding: 5.35px 0;
   color: mintcream;
   transition: background-color 400ms;
   border-radius: 5px;
@@ -538,7 +594,6 @@ a:focus {
 .text {
   white-space: pre-wrap;
   color: #42465e;
-  /*font-size: 17px;*/
   font-weight: 600;
   position: absolute;
   overflow: hidden;
@@ -553,7 +608,7 @@ li {
 }
 
 #description {
-  padding-top: 2em;
+  padding-top: 32px;
 }
 
 .product-header {
@@ -572,7 +627,7 @@ li {
   background-size: cover;
   height: 1200px;
   width: 100%;
-  padding: 0;
+  padding: 50px 0;
 }
 
 .contact-section h2 {
@@ -631,7 +686,7 @@ input[type="number"],
      background-color: #fff2f8;
      color: #42465e;
      font-family: 'Poppins', sans-serif;
-     font-size: 16px;
+     font-size: 1.6rem;
      font-weight: 300;
      letter-spacing: 1px;
 }
@@ -649,13 +704,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .btn {
-  margin-top: 2.4em;
+  margin-top: 39px;
   border-radius: 8px;
   padding: 11px 19px;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.15em;
+  font-size: 1.61rem;
   font-weight: 600;
-  letter-spacing: 0.10em;
+  letter-spacing: 1.5px;
   color: #ec95c2;
   background-color: white;
   border: 2px solid #ec95c2;
@@ -664,7 +719,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .btn:hover {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.15em;
   font-weight: 600;
   color: white;
   background-color: #ec95c2;
@@ -673,7 +727,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .social-icons {
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .social-icons a:hover {
@@ -787,7 +841,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (max-width: 991px) {
   .hero-container {
-    background-position: -410px 70px;
+    background-position: -410px 50px;
   }
 
   .hero-nav-container {
@@ -815,7 +869,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .overlay p {
-    font-size: 11px;
+    font-size: 1.1rem;
   }
 }
 
@@ -825,7 +879,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .hair-cosmetics-section,
   .advanced-treatments-section {
     height: 800px;
-    padding: 10px 0;
+    padding: 25px 0;
   }
 }
 
@@ -853,7 +907,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .hair-cosmetics-section,
   .advanced-treatments-section {
     height: 950px;
-    padding: 10px 0;
+    padding: 25px 0;
   }
 
 }
@@ -890,7 +944,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   html {
-    font-size: 55%;
+    font-size: 58%;
   }
 }
 
@@ -903,7 +957,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .hair-cosmetics-section,
   .advanced-treatments-section {
     height: 950px;
-    padding: 10px 0;
+    padding: 25px 0;
   }
 }
 
@@ -913,6 +967,6 @@ input[type="number"]::-webkit-inner-spin-button {
   .hair-cosmetics-section,
   .advanced-treatments-section {
     height: auto;
-    padding: 10px 0;
+    padding: 25px 0;
   }
 }
