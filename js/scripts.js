@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   // Makes nav bar appear after scrolling down
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 600 && $(window).width() > 992) {
+    if ($(this).scrollTop() > 600 && $(window).width() > 991) {
       $('#navbar').css('display', 'block').addClass('slideInDown').removeClass('slideOutUp');
       $('#nav-list li').addClass('fadeIn').removeClass('fadeOut');
       $('#nav-1').css('animation-delay', '0.5s');

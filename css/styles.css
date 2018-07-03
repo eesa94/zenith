@@ -336,9 +336,9 @@ a:focus {
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
+  /*height: 1200px;*/
   width: 100%;
-  padding: 0;
+  padding: 50px 0;
 }
 
 /*for sentence title*/
@@ -362,9 +362,9 @@ a:focus {
   /*background-position: 0px -200px;*/
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
+  /*height: 1200px;*/
   width: 100%;
-  padding: 0;
+  padding: 50px 0;
 }
 
 .about-section-2 h2 {
@@ -375,16 +375,6 @@ a:focus {
   padding: 10px 0;
   /*margin: 100px 0 35px;*/
   letter-spacing: 1.5px;
-}
-
-#about-row-3 {
-  position: relative;
-  /*top: 170px;*/
-}
-
-#about-row-4 {
-  position: relative;
-  /*top: 170px;*/
 }
 
 .row-header {
@@ -403,9 +393,9 @@ a:focus {
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
+  /*height: 1200px;*/
   width: 100%;
-  padding: 0;
+  padding: 50px 0;
 }
 
 .hair-cosmetics-section h2 {
@@ -421,7 +411,7 @@ a:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
+  /*height: 1200px;*/
   width: 100%;
   padding: 0;
 }
@@ -564,6 +554,12 @@ li {
 
 #description {
   padding-top: 2em;
+}
+
+.product-header {
+  color: #42465e;
+  margin-top: 20px;
+  line-height: 1.5;
 }
 
 
@@ -737,12 +733,25 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-@media (max-width: 1200px) {
-
-  .about-section-2 {
-    background-position: -400px 0px;
+@media (min-width: 1200px) {
+  .about-section {
+    height: 1400px;
+    padding: 50px 0;
   }
 
+  .about-section-2,
+  .hair-cosmetics-section,
+  .advanced-treatments-section {
+    height: 1200px;
+    padding: 50px 0;
+  }
+
+  .row-header {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
   .row-header {
     text-align: center;
   }
@@ -750,8 +759,21 @@ input[type="number"]::-webkit-inner-spin-button {
   #contact-form {
     margin-top: 50px;
   }
-
+  .row-header {
+    margin-top: 10px;
+  }
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-section,
+  .about-section-2,
+  .hair-cosmetics-section,
+  .advanced-treatments-section {
+    height: 950px;
+    padding: 70px 0;
+  }
+}
+
 
 @media (min-width: 992px) {
   .hero-nav-container {
@@ -794,6 +816,52 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 1300px;
   }
 
+  .overlay p {
+    font-size: 11px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-section,
+  .about-section-2,
+  .hair-cosmetics-section,
+  .advanced-treatments-section {
+    height: 800px;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-header {
+    display: none;
+  }
+
+  .product-col {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .overlay {
+    display: none;
+  }
+
+  .product-col {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (min-width: 532px) and (max-width: 767px) {
+  .about-section,
+  .about-section-2,
+  .hair-cosmetics-section,
+  .advanced-treatments-section {
+    height: 950px;
+    padding: 10px 0;
+  }
+
 }
 
 @media (max-width: 571px) {
@@ -806,11 +874,6 @@ input[type="number"]::-webkit-inner-spin-button {
     display: none;
   }
 
-  .about-section {
-    height: auto;
-  }
-
-  .hair-cosmetics-section,
   .advanced-treatments-section {
     height: 1000px;
   }
@@ -819,12 +882,12 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 1500px;
   }
 
-  .row-header {
-    margin-top: 10px;
-  }
-
   html {
     font-size: 55%;
   }
+
+}
+
+@media (max-width: 532px) {
 
 }
