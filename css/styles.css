@@ -206,7 +206,8 @@ a:focus {
 }
 
 .slideOutUp,
-.slideOutLeft {
+.slideOutLeft,
+.fadeOut {
   animation-delay: 1s;
 }
 
@@ -873,6 +874,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .overlay p {
     font-size: 1.1rem;
+  }
+
+  .navbar-primary,
+  .nav-container,
+  #navbar {
+    display: none!important;
   }
 }
 
