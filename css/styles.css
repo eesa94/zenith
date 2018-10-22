@@ -107,7 +107,7 @@ a:focus {
   transition: 0.3s;
 }
 
-.navbar-header, .title .navbar-brand {
+.navbar-header {
   background-color: #ec95c2;
 }
 
@@ -118,20 +118,20 @@ a:focus {
   margin: 0 70px;
 }
 
-.title a {
+.brand {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   color: mintcream;
   font-size: 3.24rem;
   font-weight: 600;
-  padding-left: 18px;
   letter-spacing: 4.8px;
 }
 
-.title a:hover,
-.title a:focus {
+.brand:hover,
+.brand:focus {
   text-decoration: none;
-  }
+  color: mintcream;
+}
 
 .navbar-inverse {
   border: none;
@@ -178,18 +178,6 @@ a:focus {
   color: #42465e;
 }
 
-.navbar-open {
-  position: relative;
-  padding: 9px 10px;
-  margin-top: 8px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  background-color: #ec95c2;
-  float: left;
-  width: 40px;
-  height: 40px;
-}
-
 .fa-bars {
   color: #42465e;
 }
@@ -211,51 +199,47 @@ a:focus {
   animation-delay: 1s;
 }
 
+
+/*mobile styling*/
 .navbar-secondary {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  background-color: #ec95c2;
-  z-index: 1029;
-  transition: 0.3s;
-}
-
-.navbar-brand-secondary {
-  float: left;
-}
-
-/*sidebar styling*/
-.sidebar {
-  display: none;
-  flex-direction: column;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #ec95c2;
-  z-index: 1030;
-  transition: 0.3s;
-}
-
-.sidebar-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
-  width: 100%;
-  padding: 40px 20px;
-}
-
-.sidebar-title {
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
-  margin-bottom: 10px;
+  background-color: #ec95c2;
+  padding: 0 20px;
+  transition: 0.3s;
+  z-index: 100;
 }
 
-.sidebar-title a {
-  padding: 10px;
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  background-color: rgba(236, 149, 194, 0.73);
+  z-index: 200;
+  transition: 0.3s;
+}
+
+
+.mobile-row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-open {
+  z-index: 300;
+  position: fixed;
+  top: 25px;
+  right: 25px;
 }
 
 .fa-times {
@@ -264,15 +248,15 @@ a:focus {
   color: #42465e;
 }
 
-.sidebar-navigation-item {
-  width: 80%;
+.mobile-navigation-item {
   background-color: mintcream;
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  float: none!important;
 }
 
-.sidebar-navigation-item a {
+.mobile-navigation-item a {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -836,9 +820,9 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
   }
 
-  .navbar-open,
+  .nav-open,
   .navbar-secondary {
-    display: none;
+    display: none!important;
   }
 
 }
@@ -889,7 +873,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .hair-cosmetics-section,
   .advanced-treatments-section {
     height: 800px;
-    padding: 25px 0;
+    padding: 55px 0;
   }
 }
 

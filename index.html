@@ -8,6 +8,8 @@
 
     <title>Zenith Cosmetics</title>
 
+    <link rel="icon" type="image/png" href="img/icons8-lips-40.png">
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet"
@@ -17,6 +19,8 @@
 
     <!-- Custom styles for this template go here -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+
     <link href="https://fonts.googleapis.com/css?family=Acme|Poppins:300,500,600,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amita" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -28,11 +32,7 @@
     <!-- Primary navbar visible > 992px -->
     <nav class="navbar navbar-inverse navbar-fixed-top animated" role="navigation" id="navbar">
       <div class="container-fluid nav-container">
-        <div class="navbar-header">
-          <div class="title navbar-brand">
-            <a href="#home" id="title-home">Zenith</a>
-          </div>
-        </div>
+        <a href="#home" class="brand" id="brand-home">Zenith</a>
         <div class="navbar-primary">
           <ul class="nav navbar-nav navbar-right" id="nav-list">
             <li class="animated" id="nav-1"><a href="#about">About</a></li>
@@ -45,31 +45,28 @@
     </nav>
 
     <!-- Secondary navbar visible < 992px -->
-    <nav class="navbar navbar-fixed-top navbar-secondary" role="navigation">
-      <div class="container-fluid">
-        <div class="title navbar-brand navbar-brand-secondary">
-          <a href="#home" id="title-home">Zenith</a>
-        </div>
-        <button type="button" class="navbar-open" data-toggle="collapse"
-        data-target=".navbar-collapse">
-          <i class="fas fa-bars"></i>
-        </button>
-
-      </div>
+    <nav class="navbar-secondary animated" role="navigation">
+      <a href="#home" class="brand" id="brand-home">Zenith</a>
     </nav>
 
-    <div class="sidebar">
-      <ul class="nav nav-pills sidebar-navigation nm">
-        <div class="title sidebar-title">
-          <a href="#home" id="title-home">Zenith</a>
-          <i class="fas fa-times navbar-close"></i>
+    <button class="hamburger hamburger--spin nav-open" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <div class="container mobile-menu">
+      <div class="row mobile-row">
+        <div class="col-xs-12 col-sm-8">
+          <ul class="nav nav-pills mobile-navigation nm">
+            <li class="mobile-navigation-item"><a href="#home" class="mobile-link">Home</a></li>
+            <li class="mobile-navigation-item"><a href="#about" class="mobile-link">About</a></li>
+            <li class="mobile-navigation-item"><a href="#hair-and-cosmetics" class="mobile-link">Hair &amp; Cosmetics</a></li>
+            <li class="mobile-navigation-item"><a href="#advanced-treatments" class="mobile-link">Advanced Treatments</a></li>
+            <li class="mobile-navigation-item"><a href="#contact" class="mobile-link">Contact</a></li>
+          </ul>
         </div>
-        <li class="sidebar-navigation-item"><a href="#home" class="sidebar-link">Home</a></li>
-        <li class="sidebar-navigation-item"><a href="#about" class="sidebar-link">About</a></li>
-        <li class="sidebar-navigation-item"><a href="#hair-and-cosmetics" class="sidebar-link">Hair &amp; Cosmetics</a></li>
-        <li class="sidebar-navigation-item"><a href="#advanced-treatments" class="sidebar-link">Advanced Treatments</a></li>
-        <li class="sidebar-navigation-item"><a href="#contact" class="sidebar-link">Contact</a></li>
-      </ul>
+      </div>
     </div>
 
 
