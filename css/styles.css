@@ -901,7 +901,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .hair-cosmetics-section,
   .advanced-treatments-section {
     height: 950px;
-    padding: 25px 0;
+    padding: 55px 0;
   }
 
 }
@@ -951,7 +951,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .hair-cosmetics-section,
   .advanced-treatments-section {
     height: 950px;
-    padding: 25px 0;
+    padding: 55px 0;
   }
 }
 
@@ -961,6 +961,6 @@ input[type="number"]::-webkit-inner-spin-button {
   .hair-cosmetics-section,
   .advanced-treatments-section {
     height: auto;
-    padding: 25px 0;
+    padding: 55px 0;
   }
 }
